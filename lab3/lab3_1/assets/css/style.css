@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+#container{
+    width: 1180px;
+    margin: auto;
+    border-left: 6px solid #8b0000;
+    border-bottom: 2px solid #8b0000;
+}
+#container nav{
+    background-color: #eeeeee;
+    overflow: auto;
+}
+#container nav .item{
+    float: left;
+    font-size: 17px;
+    padding: 20px 15px 20px 15px;
+    cursor: pointer;
+}
+#container nav .item:hover{
+    background-color: #8b0000;
+    color: white;
+}
+#container nav .sub-menu{
+    display: none;
+    border-top: 2px solid #8b0000;
+}
+#container .sub-menu .item{
+    float: none;
+    border-bottom: 2px solid #c1c1c1;
+}
+#container nav .item:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -15px;
+    color: black;
+}
