@@ -1,0 +1,101 @@
+*{
+    /*margin: 0;*/
+    /*padding: 0;*/
+    box-sizing: border-box;
+}
+:root{
+    --f7--:#f7f7f7;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #eeeeee;
+}
+.mg-60{
+    margin: 0 60px;
+}
+
+input,label , textarea {
+    border: 0;
+    outline: none;
+    padding: 12px 0 0 15px ;
+    font-size: 15px;
+    width: 100%;
+}
+label {
+    font-size: 10px;
+    font-weight: 700;
+
+}
+select{
+    font-size: 15px;
+    border: var(--f7--) 1px solid;
+    padding: 15px;
+    background-color: var(--f7--);
+}
+input{
+    padding-bottom: 15px ;
+    background: var(--f7--);
+}
+input, textarea {
+    opacity: 0.3;
+    font-weight: 700;
+}
+#app{
+    width: 720px;
+    background-color: white;
+    border-radius: 30px;
+}
+#header{
+    margin: 40px 0;
+    text-align: center;
+}
+.container__grid{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    background: var(--f7--);
+    /*overflow: hidden;*/
+    border: 1px solid #eeeeee;
+}
+.container__flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.container__message{
+    background-color: white;
+    border: 1px solid #eeeeee;
+}
+#footer{
+    margin-bottom: 10px;
+    position: relative;
+
+}
+#footer input{
+    border-radius: 10px;
+    background-color:#333333;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+#footer i{
+    position: absolute;
+    color: white;
+    top:35%;
+    left:calc(50% + 40px);
+    font-size: 14px;
+    cursor: pointer;
+}
+#footer:hover{
+    background-color: lightgray;
+}
+#footer:active{
+    background-color: dimgray;
+}
