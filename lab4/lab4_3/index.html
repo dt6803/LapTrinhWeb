@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 4_3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="greeting"></div>
+    <script>
+        // danh sách lời chào ngẫu nhiên
+        var greetings = [
+            "Kính chào và chúc bạn một ngày tốt lành!",
+            "Bạn có mặt ở đây là niềm hạnh phúc của chúng tôi",
+            "Chúng tôi có thể giúp gì cho bạn?",
+            "Chào mừng bạn ghé thăm website của chúng tôi",
+            "Đón chào khách tới. Hẹn gặp lại khách đi",
+            "Lời chào cao hơn mâm cỗ",
+            "Gặp được nhau là duyên, giúp được nhau là nợ <3"
+        ];
+        // hàm random 1 lời chào ngẫu nhiên lấy từ danh sách greeting trên
+        function getRandomGreeting(){
+            var ramdom = Math.floor(Math.random() * greetings.length);
+            return greetings[ramdom];
+        }
+        //hiển thị lời chào ngẫu nhiên
+        // window.onload = function (){
+            var display = document.getElementById("greeting");
+            display.textContent = getRandomGreeting();
+        // }
+    </script>
+
+</body>
+</html>
