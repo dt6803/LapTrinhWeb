@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+button{
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+}
+.button_crimson {
+    background-color: crimson;
+    width: 20%;
+    height: 40px;
+    margin: 20px;
+}
+.button_forestgreen {
+    background-color: forestgreen;
+    width: 20%;
+    height: 40px;
+    margin: 20px;
+}
+.button_chocolate {
+    background-color: chocolate;
+    width: 20%;
+    height: 40px;
+    margin: 20px;
+}
+.button_goldenrod {
+    background-color: goldenrod;
+    width: 20%;
+    height: 40px;
+    margin: 20px;
+}
+.button_darkmagenta{
+    background-color: darkmagenta;
+    width: 20%;
+    height: 40px;
+    margin: 20px;
+}
+.button_lightskyblue{
+    background-color: lightskyblue;
+    width: 20%;
+    height: 40px;
+    margin: 20px;
+}
