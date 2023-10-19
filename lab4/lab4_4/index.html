@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4_4</title>
+    <style>
+        #text {
+            margin: 40px 3px 12px;
+        }
+
+        #text_field {
+            margin-bottom: 12px;
+        }
+        #send {
+            margin-top: 24px;
+        }
+    </style>
+</head>
+
+<body>
+<textarea id="text" rows="4" cols="40">
+Ai còn mẹ xin đừng làm mẹ khóc
+Đừng để buồn lên mắt mẹ nghe không?
+    </textarea>
+<br>
+Từ 
+<input type="text" name="" id="text_field"> <br>
+Xuất hiện: <span id="result"></span> lần <br>
+<button id="send" onclick="count()">COUNT</button>
+
+<script>
+    function count() {
+        text = document.getElementById("text").value;
+        content = document.getElementById("text_field").value;
+        result = document.getElementById("result");
+        var count = 0;
+        while(text.toLowerCase().includes(content.toLowerCase())) {
+            var index = text.toLowerCase().indexOf(content.toLowerCase());
+            text = text.slice(index + content.length);
+            count++;
+            result.innerHTML = count;
+        }
+        result.innerHTML = count;
+    }
+</script>
+</body>
+</html>
